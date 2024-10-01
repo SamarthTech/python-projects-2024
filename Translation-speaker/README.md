@@ -81,9 +81,11 @@ Refer to Google Translate Language Codes for the full list.
 
 ├── main.py          
 
-├── translated_audio.mp3          
+├── translated_audio.mp3   
 
-└── translator_app.py      
+├── translator_app.py 
+
+└── Readme.md      
 
 
 
