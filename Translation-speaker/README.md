@@ -79,11 +79,11 @@ You can translate speech to any language supported by Google Translate. A few ex
 Refer to Google Translate Language Codes for the full list.
 ## 📦 Project Structure
 
-├── translator.py          # Main Python script
+├── main.py          
 
-├── README.md              # Project documentation
+├── translated_audio.mp3          
 
-└── requirements.txt       # List of dependencies
+└── translator_app.py      
 
 
 
