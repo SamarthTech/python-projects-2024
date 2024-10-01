@@ -1,0 +1,6 @@
+TensorFlow
+Keras
+NumPy
+Pandas
+Matplotlib
+OpenCV
