@@ -2,9 +2,8 @@
 
 # 🎉 Welcome to `OPEN ODYSSEY 1.0` 🎉
 
-# Python & AI/ML Projects - Hacktoberfest 2024
+# Python & AI/ML Projects
 
-<a href="https://hacktoberfest.com/"><img src="https://img.shields.io/badge/Hacktoberfest-2024-darkgreen?style=for-the-badge&logo=hackster&logoColor=50da4c" alt="Hacktober Badge"/></a>
 <a href="https://bit.ly/open-odyssey-1"><img src="https://img.shields.io/badge/Major%20League%20Hacking%20USA-MLH-white?style=for-the-badge&logo=majorleaguehacking&color=red" alt="MLH Badge"/></a>
 
 <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-ba8e23" alt="PRs Welcome"/></a>
@@ -22,11 +21,6 @@
 
 🚀 Samarth presents to you `Open Odyssey 1.0` - an Open-source extravaganza. On our inaugural season, we bring to you a special Hacktoberfest edition, collaborating with MLH (Major League Hacking) 🥳 
 
-🌐 HacktoberFest is your gateway to the vibrant world of open source. A month-long celebration of all things open-source. This year marks the 11th anniversary of Hacktoberfest, and we’re calling on your support! Join us on this epic journey and earn yourself an exclusive digital reward kit from DigitalOcean and our sponsors and partners...
-
-📢 Sign up for Hacktoberfest 2024, and contribute 4 pull requests (PRs) between October 1st-31st to claim your stash of cool REWARDS 🔥
-
-### [Click to Participate in HacktoberFest 2024](https://hacktoberfest.com/participation/)
 
 # INSTRUCTIONS - Get Ready for the Adventure 🧭
 
@@ -39,10 +33,6 @@ Before you begin, ensure you have the following installed:
 - [Node.js and npm](https://nodejs.org/) (if applicable)
 - Any specific tools/libraries your project relies on.
 
-## Register in HacktoberFest '24 - [HacktoberFest 2024 Authorization](https://hacktoberfest.com/auth/)
-
-Visit the above link and Register yourselves under HacktoberFest 2024. Authorize by either your GitHub(RECOMMENDED) or GitLab.
-
 ## The Right Contribution
 
 This repository is specifically marked for Python and AI/ML Projects. Please stick to the project type to make organizing things easier. If you wish to contribute elsewise, please find appropriate `hacktoberfest 2024` marked repositories or pinned repositories on [SamarthTech](https://github.com/SamarthTech) . 
@@ -52,7 +42,7 @@ This repository is specifically marked for Python and AI/ML Projects. Please sti
 - Add new features or new projects by yourself
 - Implement new models
 - Be Creative !
-- Check out [CONTRIBUTING.md](https://github.com/SamarthTech/python-and-AIML-projects-hacktoberfest24/blob/main/CONTRIBUTING.md) for more information on Contribution
+- Check out [CONTRIBUTING.md](https://github.com/SamarthTech/python-projects-2024/blob/main/CONTRIBUTING.md) for more information on Contribution
 
 
 
@@ -62,7 +52,7 @@ This repository is specifically marked for Python and AI/ML Projects. Please sti
 
 2. Clone your forked repository to your PC by first clicking on 'Code' on your Forked Repo, then copy the URL shown there. The URL should look like the following with your GitHub username in place of `<your-username>` :
     ```bash
-    git clone https://github.com/<your-username>/SamarthTech/python-and-AIML-projects-hacktoberfest24.git
+    git clone https://github.com/<your-username>/SamarthTech/python-projects-2024.git
     ```
   
 3. Create a new folder and upload your mini project/source code there.
@@ -107,8 +97,6 @@ This repository is specifically marked for Python and AI/ML Projects. Please sti
 
     Whats in for the Leaders of the Leaderboard ???
     ### Social Shoutout & Certificate to Top 5 Project Contributors
-
-- ## Digital Rewards & Badges from DigitalOcean
 
 - ## Certificates for all Participants
 
