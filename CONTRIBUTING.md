@@ -1,6 +1,6 @@
-# Contribution Guide to Python and AI/ML Projects - HacktoberFest 2024
+# Contribution Guide to Python and AI/ML Projects - Open Odyssey 1.0
 
-🎉 **Welcome to Hacktoberfest 2024** 🎉  
+🎉 **Welcome to Open Odyssey 1.0** 🎉  
 
 We’re excited to have you here and appreciate your interest in contributing to our project. Whether you’re a beginner or an experienced developer, all contributions are valuable! <br/>
 And to spread the word of Open-Source, make sure to STAR this repository🌟
@@ -87,8 +87,8 @@ Comment on the issue to let others know you're working on it.
 Wait for a maintainer to assign the issue to you before starting work.
 
 
-## Mission Accomplised 🚀
+## Rewards 🚀
 
-Get 4 Pull Requests Merged successfully to complete the quest of Hacktoberfest 2024.
+Get your Pull Requests Merged successfully to complete the quest of open-source and climb up our Leaderboard.
 Get digital badges, rewards, certificates and more. 
 Keep Contributing to Open-Source!
