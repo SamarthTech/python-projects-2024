@@ -1,0 +1,5 @@
+Example Document
+
+This is an example document for testing plagiarism detection.
+It contains some text that may or may not be plagiarized from other sources.
+The goal is to identify any similarities between this document and the reference texts.

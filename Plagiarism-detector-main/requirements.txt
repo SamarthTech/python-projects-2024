@@ -1,0 +1,2 @@
+nltk
+nltk scikit-learn

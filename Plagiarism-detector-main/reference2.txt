@@ -1,0 +1,4 @@
+Reference Text 2
+
+This is the second reference text.
+It also contains some unique content for testing plagiarism detection.
