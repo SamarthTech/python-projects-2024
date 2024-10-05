@@ -1,0 +1,16 @@
+This is a simple Snake Game made using pygame.If you want to contribute to this project, please
+remember the following points:-
+
+1. Do not change the width or height of any of the objects used in the code.
+2. The random.randrange has its increment value set to 15, do not change it or else, the snake
+   head's position won't ever match the apple position
+
+Things which you can contribute to:-
+1. You can create a function which increments the clock.tick(clockspeed) by 5 everytime the
+   score reacher a certain point to make it harder the higher the score goes up.
+2. You can create a map filled with walls where if the snake ever collides with any of the 
+   walls, the game resets.
+3. Introduce a score counter display ( I could not do it on my computer for I don't know what
+   reason.)
+4. The snake is capable of retracing it's steps ie, it can move over itself. Introduce
+   the functionality to quit the game if it ever does so.
