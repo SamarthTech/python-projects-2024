@@ -27,8 +27,8 @@ This project implements an AI-powered Tetris game using Python and Pygame. The A
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/ai-tetris.git
-   cd ai-tetris
+   git clone https://github.com/yourusername/tetris-game-ai.git
+   cd tetris-game-ai
    ```
 
 2. Install the required dependencies:
