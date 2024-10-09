@@ -4,7 +4,7 @@ def get_computer_choice():
     choices = ['rock', 'paper', 'scissors']
     return random.choice(choices)
 
-def get_user_choice():
+def getchoice():
     user_input = input("Enter your choice (rock, paper, scissors, or 'quit' to exit): ").lower()
     while user_input not in ['rock', 'paper', 'scissors', 'quit']:
         print("Invalid input. Please enter rock, paper, scissors, or 'quit' to exit.")
@@ -25,7 +25,7 @@ def play_game():
     print("Welcome to Rock, Paper, Scissors!")
     
     while True:
-        user_choice = get_user_choice()
+        user_choice = getchoice()
         if user_choice == 'quit':
             print("Thanks for playing! Goodbye!")
             break
