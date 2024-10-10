@@ -1,0 +1,16 @@
+# Image Generation with GAN
+
+This folder contains a Generative Adversarial Network (GAN) implementation from scratch designed to recreate images from the digits dataset. The program demonstrates the power of GANs in generating high-quality images and emphasizes that the more you train the model, the better the results become.
+
+## Features
+
+- **Image Generation**: Generate realistic images from a dataset.
+- **Training Process**: The program showcases improvements over time, with results becoming clearer and more refined as training progresses.
+- **Performance**: The model achieved significant results after only **23 epochs**, illustrating the effectiveness of the GAN architecture.
+
+## Requirements
+
+- Python 3.x
+- TensorFlow
+- NumPy
+- Matplotlib (for visualizing results)
