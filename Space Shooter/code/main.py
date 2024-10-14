@@ -111,8 +111,8 @@ class AnimatedExposions(pygame.sprite.Sprite):
 def collisions():
     global isRunning
     player_collision = pygame.sprite.spritecollide(player, meteor_sprites, False)
-    # if player_collision:
-    #     isRunning = False
+    if player_collision:
+        isRunning = False
 
     for laser in laser_sprites:
         collided_lasers = pygame.sprite.spritecollide(laser, meteor_sprites, True)
@@ -135,6 +135,7 @@ laser_sprites = pygame.sprite.Group()
 player = Player(playerSurf, all_sprites)
 for i in range(20):
     Star(starSurf, (randint(0, WINDOW_WIDTH), randint(0, WINDOW_HEIGHT)), all_sprites)
+    
 #custom_event
 meteor_event = pygame.event.custom_type()
 pygame.time.set_timer(meteor_event, 500)
@@ -152,10 +153,8 @@ while isRunning:
     collisions()
     displaySurf.fill("#3a2e3f")
     all_sprites.draw(displaySurf)
-    # displaySurf.blit(playerSurf, playerRect)
     display_score()
     
-    pygame.display.flip() #Updates the whole screen
-    #pygame.display.update() -> Takes arguments to update specific parts in the screen, if no args given works same as flip()
+    pygame.display.flip()
 
 pygame.quit()
