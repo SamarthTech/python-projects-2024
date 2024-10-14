@@ -110,7 +110,7 @@ class AnimatedExposions(pygame.sprite.Sprite):
 #collision logic
 def collisions():
     global isRunning
-    player_collision = pygame.sprite.spritecollide(player, meteor_sprites, False)
+    player_collision = pygame.sprite.spritecollide(player, meteor_sprites, False, pygame.sprite.collide_mask)
     if player_collision:
         isRunning = False
 
@@ -135,7 +135,7 @@ laser_sprites = pygame.sprite.Group()
 player = Player(playerSurf, all_sprites)
 for i in range(20):
     Star(starSurf, (randint(0, WINDOW_WIDTH), randint(0, WINDOW_HEIGHT)), all_sprites)
-    
+
 #custom_event
 meteor_event = pygame.event.custom_type()
 pygame.time.set_timer(meteor_event, 500)
