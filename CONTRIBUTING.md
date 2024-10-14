@@ -18,7 +18,7 @@ This repository is specifically marked for Python and AI/ML Projects. Please sti
 - Fix outstanding issues with the existing code
 - Submit issues related to bugs or desired new features
 - Add new features or new projects by yourself
-- Implement new models
+- Implement new modelsz
 - Be Creative !
 
 > [!NOTE]
