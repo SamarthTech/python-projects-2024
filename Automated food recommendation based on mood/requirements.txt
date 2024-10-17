@@ -1,0 +1,5 @@
+django==1.11.17
+Bootstrap 3
+numpy
+sklearn
+bcrypt
