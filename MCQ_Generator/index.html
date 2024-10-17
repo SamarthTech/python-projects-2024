@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Generator</title>
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="file"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.mcq {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.mcq p {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Generate MCQs from Your Text</h1>
+        <form action="/generate" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Upload your document (PDF, TXT, DOCX):</label>
+                <input type="file" name="file" required>
+            </div>
+            <div class="form-group">
+                <label for="num_questions">How many questions do you want?</label>
+                <input type="number" name="num_questions" min="1" required>
+            </div>
+            <button type="submit">Generate MCQs</button>
+        </form>
+    </div>
+</body>
+</html>
