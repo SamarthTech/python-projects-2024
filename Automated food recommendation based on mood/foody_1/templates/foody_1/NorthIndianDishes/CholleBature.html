@@ -1,0 +1,41 @@
+
+
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block headblock %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+{% endblock %}
+
+{% block fullscreen %}
+<h1 class='head_mansi'>CHHOLE BHATURE</h1>
+
+
+{% for x in result %}
+<a class='link' href="{% url 'foody_1:result' %}">{{ x }}</a></li>
+
+{% endfor %}
+
+
+<style media="screen">
+.link{
+  text-align: center;
+    display: block;
+  font-size: 30px;
+font-family: 'Poor Story', cursive;
+}
+.under_tag{
+  color:black;
+  font-size: 25px;
+  font-family: 'Poor Story', cursive;
+}
+.head_mansi{
+
+  color:black;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Poor Story', cursive;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block headblock %}
+  <!-- <link rel="stylesheet" href="{% static 'simplesocial/css/instr.css' %}"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'simplesocial/css/image.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+{% endblock %}
+
+{% block fullscreen %}
+<div class="container-fluid">
+      <h2 align='center' class='confused'>Cuisines</h2>
+      <div class="row">
+        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:northindian' %}"><img src="https://blog.travelkhana.com/food/wp-content/uploads/sites/5/2017/04/north-india.jpg" alt="">North Indian</div>
+        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:southindian' %}"><img  src="http://www.foodofy.com/wp-content/uploads/2015/07/11014_14_site_clear.jpeg" alt="">South Indian</div>
+        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:italian' %}"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPwz6Gd0asAyRwxyzSbSVrSxSmdL1Wmjiodii2xWaIc45rORnM" alt="">Italian</div>
+        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:chinese' %}"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcSYMas-ewbaO2FOCTUIVNS2M_65fasV70Tbd8m9fDPRcfFO9QBQ" alt="">Chinese</div>
+
+          <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:confused' %}"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjaJTI9jykkJxkq5p-NCu3o_h2gXHwrrQlp6yCXSMbv5YYRZUx" alt="">  Feelin MOODIE? Can't decide? We can help! :D</div>
+
+
+        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:continental' %}"><img  src="http://www.differencebetween.info/sites/default/files/images/3/continental.jpg" alt="">Continental</div>
+        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:fastfood' %}"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTJZxq4GADhQdCWd-kPvWwvTVdCD8JcC8S8KxFY4NfHSQznGW_" alt="">Fast Food</div>
+        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:bev' %}"><img  src="https://www.tutorialspoint.com/food_and_beverage_services/images/non_alcoholic_beverages.jpg" alt="">Beverages</div>
+        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:des' %}"><img  src="https://i.ytimg.com/vi/vvR1pde64ZA/maxresdefault.jpg" alt="">Desserts</div>
+
+
+
+      </div>
+
+    </div>
+
+<style media="screen">
+
+
+  .hello{
+    font-size: 20px;
+    text-align: center;
+      display:block;
+      height: 320px;
+      width: 370px;
+      margin: auto;
+  }
+ .container{
+   margin-left: 130px;
+
+ }
+  .confused{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+  }
+</style>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block headblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+{% endblock %}
+
+{% block fullscreen %}
+
+<div class="container-fluid">
+<div class="jumbotron">
+  <h1>It recommends food based on your mood</h1>
+  <p>The first food recommending and delivery app that gives your mood the prime importance</p>
+</div>
+</div>
+
+<br>
+<br>
+{% if not user.is_authenticated %}
+
+<h2 align="center" ><a href="{% url 'seller:seller_form' %}" class='sell' ><p class="btn btn-primary btn-lg">Wanna sell on Moodie Foodie?</p></a></h2>
+{% endif %}
+<style>
+body {
+  background-image: url("https://thumbs.dreamstime.com/b/asian-food-background-various-ingredients-rustic-stone-top-view-vietnam-thai-cuisine-148762904.jpg");
+}
+</style>
+
+
+{% endblock %}
