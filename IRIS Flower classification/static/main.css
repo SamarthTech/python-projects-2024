@@ -1,0 +1,57 @@
+body {
+    background-image: linear-gradient(#d15b24,#012e07);
+    color: ivory;
+    margin-top: 5rem;
+    max-height: 100%;
+    z-index: 2;
+}
+
+h1,h2,h3 {
+    color: ivory;
+}
+
+
+.center_div{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#main_head{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.faded{
+    opacity: .75;
+    text-decoration: none;
+    color: black;
+}
+
+.clear{
+    color: ivory;
+}
+
+
+.footer img {
+    height: 20px;
+    width: 20px;
+}
+
+.footer{
+    margin-top: 16px;
+    position: relative;
+    text-align: center;
+    padding: 3px;
+    background-color: white;
+    opacity: 0.5;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.footer a{
+    padding-left: 10px;
+    padding-right: 10px;
+}

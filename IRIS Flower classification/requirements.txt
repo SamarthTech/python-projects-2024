@@ -1,0 +1,8 @@
+Flask==2.2.3
+Flask-WTF==1.0.0
+numpy==1.23.5
+pandas==1.5.3
+seaborn==0.12.2
+matplotlib==3.6.3
+scikit-learn==1.2.0
+joblib==1.2.0
