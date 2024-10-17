@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vehicle Number Plate Detection</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/test.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/newjs.js') }}" type="text/javascript"></script>
+</head>
+
+<body>
+      <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Vehicle Number Plate Detection</a>
+            </div>
+        </nav>
+      <center>
+            <br><h2>Vehicle Number Plate Detection</h2><br>
+            
+                <form action="/detection" method="POST" enctype="multipart/form-data">
+                     <input type="file" name="upload_file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
+                
+            
+            
+                <div class="image-section" style="display:none;">
+                     <img id="imagePreview"  class="img-responsive" src="#" style="width:300px;height:300px;"/><br><br>
+                     <div>
+                        <button type="submit" value="DETECT" class="btn btn-info btn-lg " >Predict!</button>
+                     </div>
+                </div>
+            
+            
+            </form>
+                <div class="loader" style="display:none;"></div>
+            
+                <h3 id="result">
+                    <span> </span>
+                </h3>
+            
+            
+            </center><br><br>
+
+</body>
+
+<footer>
+    <div class="foot">
+
+
+    <b>Developed By <a href="#">Projectworlds</a></b>
+
+    </div>
+
+</footer>
+
+</html>
