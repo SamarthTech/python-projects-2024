@@ -1,0 +1,135 @@
+<html>
+<script type="text/javascript" src="{{url_for('static', filename='jquery.min.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css') }}">
+<script type="text/javascript">
+    var canvas, ctx, flag = false,
+        prevX = 0,
+        currX = 0,
+        prevY = 0,
+        currY = 0,
+        dot_flag = false;
+
+    var x = "red",
+        y = 8;
+
+    function init() {
+        canvas = document.getElementById('can');
+        document.getElementById("probs").style.display = "none";
+        document.getElementById("interpret").style.display = "none";
+        ctx = canvas.getContext("2d");
+        w = canvas.width;
+        h = canvas.height;
+
+        canvas.addEventListener("mousemove", function (e) {
+            findxy('move', e)
+        }, false);
+        canvas.addEventListener("mousedown", function (e) {
+            findxy('down', e)
+        }, false);
+        canvas.addEventListener("mouseup", function (e) {
+            findxy('up', e)
+        }, false);
+        canvas.addEventListener("mouseout", function (e) {
+            findxy('out', e)
+        }, false);
+    }
+
+
+    function draw() {
+        ctx.beginPath();
+        ctx.moveTo(prevX, prevY);
+        ctx.lineTo(currX, currY);
+        ctx.strokeStyle = x;
+        ctx.lineWidth = y;
+        ctx.stroke();
+        ctx.closePath();
+    }
+
+    function erase() {
+        ctx.clearRect(0, 0, w, h);
+        document.getElementById("canvasimg").style.display = "none";
+        document.getElementById("prediction").style.display = "none";
+        document.getElementById("probs").style.display = "none";
+        document.getElementById("interpret").style.display = "none";
+        b = document.getElementsByTagName("body")[0];
+        b.querySelectorAll('a').forEach(n => n.remove());
+    }
+
+    function save() {
+        document.getElementById("prediction").style.display = "block";
+        document.getElementById("probs").style.display = "block";
+        document.getElementById("interpret").style.display = "block";
+        var final_image = canvas.toDataURL();
+        var a = document.createElement('a');
+        a.href = final_image;
+        a.download = 'process.png';
+        document.body.appendChild(a);
+        // a.click();
+        $.ajax({
+            url: "{{ url_for('process') }}",
+            type: 'POST',
+            data: final_image,
+            success: function (response) {
+                endresult = JSON.parse(JSON.stringify(response))
+                console.log(endresult)
+                $('#prediction').html('Prediction is: <span id="text">' + endresult.data + '</span>')
+                $('#probs').prop('src', 'data:image/png;base64,' + endresult.probencoded)
+                $('#interpret').prop('src', 'data:image/png;base64,' + endresult.interpretencoded)
+            }
+        });
+    }
+
+    function findxy(res, e) {
+        if (res == 'down') {
+            prevX = currX;
+            prevY = currY;
+            currX = e.clientX - canvas.offsetLeft;
+            currY = e.clientY - canvas.offsetTop;
+
+            flag = true;
+            dot_flag = true;
+            if (dot_flag) {
+                ctx.beginPath();
+                ctx.fillStyle = x;
+                ctx.fillRect(currX, currY, 2, 2);
+                ctx.closePath();
+                dot_flag = false;
+            }
+        }
+        if (res == 'up' || res == "out") {
+            flag = false;
+        }
+        if (res == 'move') {
+            if (flag) {
+                prevX = currX;
+                prevY = currY;
+                currX = e.clientX - canvas.offsetLeft;
+                currY = e.clientY - canvas.offsetTop;
+                draw();
+            }
+        }
+    }
+</script>
+
+<body onload="init()" style="background-color: rgb(202, 245, 202);">
+    <center>
+        <h1 style="background-color: rgb(151, 208, 236);"> Handwritten Digit Recognition using <span id="text">CNN Flask Web App</span></h1>
+    </center>
+    <div id="side">
+        <h4 id='text'> Draw a Digit in the center of the Box.. </h4>
+        <canvas id="can" width="500px" height="500px"></canvas>
+        <img id="canvasimg">
+        <div style="margin-top: 10;">
+            <button class="ripple" id="btn" onclick="save()"> predict </button>
+            &nbsp;
+            <button id="clr" onclick="erase()"> clear </button>
+            <h3 id="prediction"></h3>
+        </div>
+    </div>
+    <div>
+        <img id="probs" src="" alt="" height="45%" width="35%">
+        <img id="interpret" src="" alt="" height="45%" width="35%">
+    </div>
+</body>
+
+</html>
