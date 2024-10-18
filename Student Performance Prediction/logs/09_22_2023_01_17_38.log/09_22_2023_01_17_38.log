@@ -1,0 +1,6 @@
+[ 2023-09-22 01:17:38,951 ] 88 werkzeug - WARNING -  * Debugger is active!
+[ 2023-09-22 01:17:38,959 ] 88 werkzeug - INFO -  * Debugger PIN: 110-054-765
+[ 2023-09-22 01:17:38,983 ] 88 werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[ 2023-09-22 01:18:00,853 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:18:00] "[37mGET / HTTP/1.1[0m" 200 -
+[ 2023-09-22 01:18:00,853 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Program Files\\Python37\\Lib\\encodings\\__pycache__\\unicode_escape.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:00,890 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:18:00] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
