@@ -1,0 +1,8 @@
+Flask
+Werkzeug
+tensorflow
+numpy
+Flask-SQLAlchemy
+Flask-Mail
+Pillow
+mysqlclient
