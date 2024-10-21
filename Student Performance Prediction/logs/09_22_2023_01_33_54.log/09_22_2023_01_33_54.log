@@ -1,0 +1,8 @@
+[ 2023-09-22 01:33:54,622 ] 88 werkzeug - WARNING -  * Debugger is active!
+[ 2023-09-22 01:33:54,630 ] 88 werkzeug - INFO -  * Debugger PIN: 110-054-765
+[ 2023-09-22 01:33:54,653 ] 88 werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[ 2023-09-22 01:33:54,680 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:33:54] "[37mGET /predictdata HTTP/1.1[0m" 200 -
+[ 2023-09-22 01:33:54,694 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:33:54] "[37mGET /static/css/styles_home.css HTTP/1.1[0m" 200 -
+[ 2023-09-22 01:33:59,795 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:33:59] "[37mGET / HTTP/1.1[0m" 200 -
+[ 2023-09-22 01:36:18,200 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:36:18] "[37mGET /predictdata HTTP/1.1[0m" 200 -
+[ 2023-09-22 01:36:20,146 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:36:20] "[37mGET / HTTP/1.1[0m" 200 -
