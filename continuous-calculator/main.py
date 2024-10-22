@@ -39,7 +39,7 @@ while msg == 'no':
     done = False
     while not done:
         try:
-            num1 = float(input("Entre first number:\n"))
+            num1 = float(input("Enter first number:\n"))
             done = True
         except ValueError:
             print("Invalid number.")
@@ -50,12 +50,12 @@ while msg == 'no':
         done = False
         while not done:
             try:
-                num2 = float(input("Entre second number:\n"))
+                num2 = float(input("Enter second number:\n"))
                 done = True
             except ValueError:
                 print("Invalid number.")
 
-        opt= input("Entre operation:\n'+'\n'-'\n'*'\n'/'\n'%'\n")
+        opt= input("Enter operation:\n'+'\n'-'\n'*'\n'/'\n'%'\n")
         result= calculator(result, num2, opt)
         msg= input("Wish to 'CONTINUE'?: type 'yes'\n Wish to 'RESTART'?: type 'no'\n")
     print('\n' * 100)
