@@ -1,0 +1,2 @@
+captcha==0.6.0
+pillow==11.0.0

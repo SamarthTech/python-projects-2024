@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog Breed Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+<!--  nav bar-->
+<div class="nav" style="width:100%; height:40px; padding:4px; background:#C0F94D; display:flex; align-items:center; justify-content:center;">
+    <h4 style="margin:0;">Dog Breed Detection App</h4>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal" style="width:92px; height:30px; border:1 black solid; border-radius:2px; background:#0779fa;text-decoration:none; color:black; text-align:center; margin-left:20px; display:inline-flex; align-items:center; justify-content:center;">Sign Up</button>
+</div>
+
+<!--sign up messsage here-->
+{% if signup_message %}
+<h1></h1>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong>{{signup_message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+{% endif %}
+
+
+
+<!-- Bootstrap modal for sign up -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/signup" method="post">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--upload image part-->
+<div class="container mt-4" style="background:#f291b8; width:50%; border-radius:15px; padding:10px;">
+  <h1 class="text-center mt-8">Transfer Learning | InceptionV3</h1>
+  <!-- Camera and File Upload Options -->
+  <form action="/" method="post" enctype="multipart/form-data" class="mb-4 d-flex flex-column align-items-center">
+    <!-- Use flex-column and align-items-center to center elements vertically -->
+    <label for="fileInput" class="form-label">Choose an image file:</label>
+    <div class="input-group mb-3">
+      <!-- Wrap input field and button in input-group -->
+      <input  type="file" id="fileInput" name="file" accept=".jpg, .jpeg, .png" class="form-control" style="display:none;">
+      <!-- Hide the default input field -->
+      <button style="margin-left:42%;" type="button" class="btn btn-success" onclick="document.getElementById('fileInput').click();">Choose File</button>
+      <!-- Use a button to trigger file input click -->
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Predict</button>
+  </form>
+</div>
+
+
+<div class="container" style="background:black;color:white;width:50%; border:1px solid black; border-radius:15px; padding: 3px; margin-top:3px;">
+  {% if message %}
+    <p class="text-danger">{{ message }}</p>
+  {% endif %}
+
+  {% if image_path %}
+    <div class="row">
+      <p class="text-center">{{alert_message}}</p>
+      <div class="col-6">
+        <div class="div1"><img style="width:100%;" src="{{ image_path }}" alt="Uploaded Image" class="img-fluid rounded"></div>
+      </div>
+      <div class="col-6">
+        <div class="div2">
+          <p class="mt-3">Actual Label: {{ actual_label }}</p>
+          <p>Predicted Label: {{ predicted_label }}</p>
+          <p>Confidence: {{ confidence }}%</p>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  </body>
+</html>

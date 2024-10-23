@@ -1,0 +1,63 @@
+[ 2023-09-22 01:18:02,389 ] 88 werkzeug - WARNING -  * Debugger is active!
+[ 2023-09-22 01:18:02,396 ] 88 werkzeug - INFO -  * Debugger PIN: 110-054-765
+[ 2023-09-22 01:18:02,415 ] 88 werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[ 2023-09-22 01:18:04,743 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:18:04] "[37mGET /predictdata HTTP/1.1[0m" 200 -
+[ 2023-09-22 01:18:04,766 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:18:04] "[37mGET /static/css/styles_home.css HTTP/1.1[0m" 200 -
+[ 2023-09-22 01:18:28,979 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\flask\\__pycache__\\debughelpers.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:28,988 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\__init__.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:28,989 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_base.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:28,992 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_bayes.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:28,992 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_least_angle.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:28,998 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_coordinate_descent.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:28,998 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\_glm\\__pycache__\\__init__.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:28,999 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\_glm\\__pycache__\\glm.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:28,999 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\utils\\__pycache__\\optimize.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,000 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\_glm\\__pycache__\\link.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,001 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_huber.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,004 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_stochastic_gradient.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,004 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_ridge.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,004 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_sag.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,006 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_logistic.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,006 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\svm\\__pycache__\\__init__.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,007 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\svm\\__pycache__\\_classes.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,008 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\svm\\__pycache__\\_base.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,012 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\svm\\__pycache__\\_bounds.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,013 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_omp.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,013 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_passive_aggressive.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,014 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_perceptron.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,014 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_quantile.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,014 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_ransac.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,015 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\linear_model\\__pycache__\\_theil_sen.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,023 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\base.py', reloading
+[ 2023-09-22 01:18:29,028 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\compose\\__pycache__\\__init__.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,030 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\compose\\__pycache__\\_column_transformer.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,030 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\__pycache__\\pipeline.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,032 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\compose\\__pycache__\\_target.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,033 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\impute\\__pycache__\\__init__.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,033 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\impute\\__pycache__\\_base.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,033 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\impute\\__pycache__\\_knn.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,034 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\__init__.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,037 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_distance_metric.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,037 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_graph.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,038 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_base.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,039 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_unsupervised.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,039 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_classification.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,040 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_regression.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,040 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_nearest_centroid.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,042 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_kde.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,043 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_lof.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,044 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\neighbors\\__pycache__\\_nca.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,045 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\__init__.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,046 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_nmf.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,047 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_pca.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,047 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_base.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,048 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\utils\\__pycache__\\_arpack.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,048 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_incremental_pca.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,049 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_kernel_pca.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,049 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_sparse_pca.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,050 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_dict_learning.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,050 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_truncated_svd.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,052 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_fastica.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,052 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_factor_analysis.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,053 ] 88 werkzeug - INFO -  * Detected change in 'C:\\Users\\yuges\\AppData\\Roaming\\Python\\Python37\\site-packages\\sklearn\\decomposition\\__pycache__\\_lda.cpython-37.pyc', reloading
+[ 2023-09-22 01:18:29,062 ] 88 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2023 01:18:29] "[37mPOST /predictdata HTTP/1.1[0m" 200 -
