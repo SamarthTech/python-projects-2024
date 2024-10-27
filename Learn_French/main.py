@@ -2,19 +2,20 @@ from tkinter import *
 import pandas as pd
 from random import choice
 BACKGROUND_COLOR = "#B1DDC6"
-word = None
-translated_word = None
+word_dict = None
+word_lib = {}
+
 
 # Read the word file and extract the words
-
 try:
     word_infos= pd.read_csv("words_to_learn.csv")
-    french_words = word_infos["French"].to_list()
-    english_words = word_infos["English"].to_list()
+    word_lib = word_infos.to_dict(orient="records")
+    
+    
 except FileNotFoundError:
     word_infos= pd.read_csv("french_words.csv")
-    french_words = word_infos["French"].to_list()
-    english_words = word_infos["English"].to_list()
+    word_lib = word_infos.to_dict(orient="records")
+    
 
 
 
@@ -35,46 +36,43 @@ title2 = front.create_text(180, 200, text="", font=("Arial", 20, "bold"))
 front.grid(row=0, column=0, columnspan=2,padx=20, pady=20)
 
 def new_word () :
-    global word
+    global word_dict
 
     right_btn.config(state= "disabled")
     wrong_btn.config(state= "disabled")
 
     # Fetching a French word randomly
-    word = choice(french_words)
+    word_dict = choice (word_lib)
+    word_fr = word_dict["French"]
     front.itemconfig(front_img, image= img1)
     front.itemconfig(title1, text="French")
-    front.itemconfig(title2, text= word)
+    front.itemconfig(title2, text= word_fr)
 
     # Console the ans after 3s
     window.after(3000, func=console_ans)
 
 
 def console_ans () :
-    global translated_word
-
     front.itemconfig(front_img, image= img4)
     front.itemconfig(title1, text= "English")
 
     # Fetching the english meaning of the randomly selected word
-    translated_word = word_infos[word_infos["French"] == word].English.item()
-    front.itemconfig(title2, text= translated_word)
+    
+    word_en = word_dict["English"]
+    front.itemconfig(title2, text= word_en)
 
     right_btn.config(state= "normal")
     wrong_btn.config(state= "normal")
 
-  
+
 def correct () :
     # Removing words marked as known
-    french_words.remove(word)
-    english_words.remove(translated_word)
+    
+    word_lib.remove(word_dict)
 
-    learn_words = {
-        "French" : french_words,
-        "English" : english_words
-    }
 
-    data = pd.DataFrame(learn_words)
+
+    data = pd.DataFrame(word_lib)
     print(data)
     data.to_csv("words_to_learn.csv" , index=False)
 
