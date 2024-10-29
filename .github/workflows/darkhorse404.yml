@@ -33,7 +33,7 @@ jobs:
           gh pr list --state open
           
           echo "Attempting to get PR numbers:"
-          PR_LIST=$(gh pr list --state open --json number,createdAt,labels --jq 'sort_by(.createdAt) | map(select(any(.labels[]; .name != "waiting room"))) | .[0:150] | .[].number' | tr '\n' ' ' || echo "")
+          PR_LIST=$(gh pr list --state open --json number,createdAt,labels --jq 'sort_by(.createdAt) | map(select(any(.labels[]; .name != "waiting room"))) | .[0:500] | .[].number' | tr '\n' ' ' || echo "")
           echo "Raw PR_LIST output: $PR_LIST"
           
           if [ -z "$PR_LIST" ]; then
