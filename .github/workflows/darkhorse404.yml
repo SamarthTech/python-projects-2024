@@ -53,7 +53,7 @@ jobs:
             exit 0
           fi
         env:
-          GH_TOKEN: ${{ secrets.PAT }}
+          GH_TOKEN: ${{ secrets.PRAVIDHI_24 }}
 
       - name: Debug output
         run: |
@@ -138,7 +138,7 @@ jobs:
             fi
           done  
         env:
-          GH_TOKEN: ${{ secrets.PAT }}
+          GH_TOKEN: ${{ secrets.PRAVIDHI_24 }}
           INVALID_PR_COMMENT: |
             ## ⚠️ Welcome to PR waiting room
             
@@ -154,4 +154,3 @@ jobs:
             Once the issues are resolved, we'll review your pull request again. If you have any questions, please don't hesitate to ask.
             
             Thank you for your understanding and cooperation!
-
