@@ -1,0 +1,134 @@
+# returns the nearest multiple of 4
+def nearestMultiple(num):
+    if num >= 4:
+        near = num + (4 - (num % 4))
+    else:
+        near = 4
+    return near
+
+def lose1():
+    print("\n\nYOU LOSE!")
+    print("Better luck next time!")
+    exit(0)
+
+# checks whether the numbers are consecutive
+def check(xyz):
+    for i in range(1, len(xyz)):
+        if (xyz[i] - xyz[i - 1]) != 1:
+            return False
+    return True
+
+# handles the computer's turn
+def computerTurn(last, comp, xyz):
+    print("\nComputer's Turn.")
+    for j in range(1, comp + 1):
+        xyz.append(last + j)
+    print("Order of inputs after computer's turn: ", xyz)
+    return xyz[-1]  # return the last number
+
+# handles the player's input
+def playerInput(last):
+    print("\nYour Turn.")
+    print("\nHow many numbers do you wish to enter? (1-3)")
+    try:
+        inp = int(input('> '))
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        lose1()
+
+    if inp < 1 or inp > 3:
+        print("Wrong input. You are disqualified from the game.")
+        lose1()
+
+    xyz = []
+    print("Now enter the values")
+    for _ in range(inp):
+        try:
+            a = int(input('> '))
+            xyz.append(a)
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+            lose1()
+
+    # Check if the inputs are consecutive
+    if not check(xyz):
+        print("\nYou did not input consecutive integers.")
+        lose1()
+
+    last = xyz[-1]
+    return last, xyz
+
+# starts the game
+def start1():
+    xyz = []
+    last = 0
+    while True:
+        print("Enter 'F' to take the first chance.")
+        print("Enter 'S' to take the second chance.")
+        chance = input('> ').strip().upper()  # Ensure case-insensitive comparison
+
+        # Player takes the first chance
+        if chance == "F":
+            while True:
+                if last == 20:
+                    lose1()
+
+                last, player_input = playerInput(last)
+                xyz.extend(player_input)
+
+                if last == 21:
+                    lose1()
+
+                comp = 4 - len(player_input)  # Computer picks the remaining numbers up to 4
+                last = computerTurn(last, comp, xyz)
+
+                if last >= 21:
+                    print("\n\nCONGRATULATIONS!!!")
+                    print("YOU WON!")
+                    exit(0)
+
+        # Player takes the second chance
+        elif chance == "S":
+            comp = 1
+            last = 0
+            while last < 20:
+                last = computerTurn(last, comp, xyz)
+
+                if last == 20:
+                    lose1()
+
+                last, player_input = playerInput(last)
+                xyz.extend(player_input)
+
+                if last >= 21:
+                    print("\n\nCONGRATULATIONS!!!")
+                    print("YOU WON!")
+                    exit(0)
+
+                # Calculate next move for the computer
+                near = nearestMultiple(last)
+                comp = near - last
+                if comp == 4:
+                    comp = 3
+
+        else:
+            print("Wrong choice! Please select 'F' or 'S'.")
+
+# Main game loop
+game = True
+while game:
+    print("Player 2 is Computer.")
+    print("Do you want to play the 21 number game? (Yes / No)")
+    ans = input('> ').strip().capitalize()
+    if ans == 'Yes':
+        start1()
+    else:
+        print("Do you want to quit the game? (yes / no)")
+        nex = input('> ').strip().lower()
+        if nex == "yes":
+            print("You are quitting the game...")
+            exit(0)
+        elif nex == "no":
+            print("Continuing...")
+        else:
+            print("Wrong choice!")

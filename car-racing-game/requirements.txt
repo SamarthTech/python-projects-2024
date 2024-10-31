@@ -1,0 +1,3 @@
+pathlib2==2.3.7.post1
+pygame==2.3.0
+six==1.16.0

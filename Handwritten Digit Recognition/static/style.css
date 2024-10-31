@@ -1,0 +1,58 @@
+body{
+  background-color: antiquewhite;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  /* .ripple:hover {
+    
+  } */
+  .ripple:active {
+    background: #25282b radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+    /* background-color: #6eb9f7; */
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  /* Button style */
+  button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+  }
+  
+  /* Span style */
+#text {
+    color: #4DAF74;
+}
+
+/* Canvas style */
+#can {
+    margin-top: 10;
+    border:5px solid;
+}
+
+/* canvasimage style */
+#canvasimg{
+    position:absolute;
+    display:none;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#side{
+  float: left;
+  padding-left:15%;
+}
