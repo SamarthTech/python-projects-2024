@@ -29,16 +29,37 @@ def time():
 root = tk.Tk()
 root.title("Digital Clock")
 
+# Function to toggle between dark mode and light mode
+def toggle_mode(event=None):
+    global is_dark_mode
+    if is_dark_mode:
+        # Switch to light mode
+        label.config(background='white', foreground='black')
+        root.config(bg='white')
+        is_dark_mode = False
+    else:
+        # Switch back to dark mode
+        label.config(background='black', foreground='red')
+        root.config(bg='black')
+        is_dark_mode = True
+
+# Label to display the clock
+label = tk.Label(root, font=('calibri', 50, 'bold'), background='black', foreground='red')
+
+# Pack the label
+label.pack(anchor='center')
 
 canvas = tk.Canvas(root, width=400, height=300)
 canvas.pack(fill="both", expand=True)
 
-
 label = tk.Label(canvas, font=('calibri', 50, 'bold'), fg='white')
 label.place(relx=0.5, rely=0.5, anchor='center')
 
+# Bind the "Shift + D" key to toggle between light and dark modes
+root.bind('<Shift-D>', toggle_mode)
+
+# Call the time function to start the clock
 time()
 update_background()
-
 
 root.mainloop()
