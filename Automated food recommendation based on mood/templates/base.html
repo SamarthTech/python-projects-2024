@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Foody</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    {% block headblock %}
+    {% endblock %}
+
+  </head>
+  <style>
+  body {
+  background-color: lightblue;
+}
+</style>
+  <body>
+    <nav class="navbar mynav" role="navigation" id="navbar">
+    			<div class="container">
+            {% if user.is_authenticated %}
+            <a class="navbar-brand btn btn-default" href="{% url 'test' %}">
+              <span class='glyphicon glyphicon-home'>
+				Food Recommendation
+               </span>
+            </a>
+               {% else %}
+            <a class="navbar-brand btn btn-default" href="{% url 'home' %}">
+              <span class='glyphicon glyphicon-home'>
+				Food Recommendation
+               </span>
+            </a>
+              {% endif %}
+    					<ul class="nav navbar-nav navbar-right">
+    						{% if user.is_authenticated %}
+                    <li><a href="{% url 'foody_1:logout' %}"><button type="button" class="btn btn-primary">LogOut</button></a></li>
+    						{% else %}
+                      <li><a href="{% url 'foody_1:login' %}"><button type="button" class="btn btn-primary">Login</button></a></li>
+                      <li><p></p></li>
+    						      <li><a href="{% url 'foody_1:signup' %}"><button type="button" class="btn btn-primary">Sign Up</button></a></li>
+    						{% endif %}
+    					</ul>
+    			</div>
+    		</nav>
+        {% block fullscreen %}
+        {% endblock %}
+        <div class="container mycontent">
+          {% block content %}
+
+          {% endblock %}
+        </div>
+
+  <canvas id="canvas"></canvas>
+
+  </body>
+  <!-- <script src="{% static "simplesocial/js/master.js"%}" type="text/javascript" ></script> -->
+</html>

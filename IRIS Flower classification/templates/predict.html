@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="content-section center_div">
+    <form method="POST",action="">
+        {{ form.hidden_tag()}} 
+
+        <fieldset class="form-group">
+            <h6><CENTER>ENTER THE VALUES</CENTER><H6/>
+            <h6 class="border-bottom mb-4" style="font-size: 12px;">
+                <CENTER>(TYPICAL VALUES ARE GIVEN INCASE YOU ARE NOT SURE WHAT TO ENTER)</CENTER>
+            </h6>
+
+            
+            
+            
+            <div class="form-group" id="sl">
+                {{ form.sl.label (class="form-control-label")}}                   <!-- label --> 
+                {{ form.sl(class="form-control form-control-lg") }}                 <!-- field -->
+            </div>
+            <div class="form-group" id="sw">
+                {{ form.sw.label(class="form-control-label")}}
+                {{ form.sw(class="form-control form-control-lg") }}
+            </div>
+            <div class="form-group" id="pl">
+                {{ form.pl.label(class="form-control-label")}}
+                {{ form.pl(class="form-control form-control-lg") }}
+            </div>
+            <div class="form-group" id="pw">
+                {{ form.pw.label(class="form-control-label")}}
+                {{ form.pw(class="form-control form-control-lg") }}
+            </div>
+            
+        </fieldset>
+
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-light") }}
+            </div>
+    </form>
+</div>
+<div class="border-top pt-3 center_div">
+    <small class="faded" style="color: ivory;">
+        Clear the values? <a class="ml-2 clear" href="{{ url_for('predict') }}">Clear</a>
+    </small>
+</div>
+
+{% endblock %}

@@ -1,0 +1,5 @@
+Flask
+Werkzeug
+tensorflow
+numpy
+matplotlib
